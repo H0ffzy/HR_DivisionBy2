@@ -1,16 +1,29 @@
-# This is a sample Python script.
+#!/bin/python
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+import math
+import os
+import random
+import re
+import sys
 
 
-# Press the green button in the gutter to run the script.
+def isDivisibleBy2(num):
+    if (num % 2) == 0:
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    #n = int(raw_input().strip())
+    n = int(18)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    if isDivisibleBy2(n):
+        if n > 20:
+            print("Not Weird")
+        elif n <= 20 and n >= 6:
+            print("Weird")
+        elif n <= 5:
+            print("Not Weird")
+    else:
+        print("Weird")
